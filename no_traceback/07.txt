@@ -1,0 +1,9 @@
+# Test: unreadable file (run 'chmod 000 07.txt' first)
+# Expect: error message, nonzero exit, no traceback
+# Check: also a missing path, a directory, no argument
+nb_drones: 2
+start_hub: s 0 0
+hub: a 1 0
+end_hub: e 2 0
+connection: s-a
+connection: a-e

@@ -1,0 +1,15 @@
+# One case per slot is active. To switch: comment it out with '#',
+# remove '#' from another case.
+nb_drones: 2
+start_hub: s 0 0
+hub: a 1 0
+end_hub: e 2 0
+# negative link capacity -> error at line 8, no traceback
+connection: s-a [max_link_capacity=-1]
+# zero link capacity -> error at line 10, no traceback
+#connection: s-a [max_link_capacity=0]
+# float link capacity -> error at line 12, no traceback
+#connection: s-a [max_link_capacity=2.0]
+# full-width digit -> error at line 14, no traceback
+#connection: s-a [max_link_capacity=２]
+connection: a-e

@@ -1,0 +1,68 @@
+# One case per slot is active. To switch: comment it out with '#',
+# remove '#' from another case.
+# two 3-turn routes, priority route listed second -> 3 turns via p1, p2
+nb_drones: 1
+start_hub: s 0 0
+hub: a1 1 1
+hub: a2 2 1
+hub: p1 1 -1 [zone=priority]
+hub: p2 2 -1 [zone=priority]
+end_hub: e 3 0
+connection: s-a1
+connection: a1-a2
+connection: a2-e
+connection: s-p1
+connection: p1-p2
+connection: p2-e
+# mirror: priority route b1, b2 listed first -> 3 turns via b1, b2
+#nb_drones: 1
+#start_hub: s 0 0
+#hub: b1 1 -1 [zone=priority]
+#hub: b2 2 -1 [zone=priority]
+#hub: z1 1 1
+#hub: z2 2 1
+#end_hub: e 3 0
+#connection: s-b1
+#connection: b1-b2
+#connection: b2-e
+#connection: s-z1
+#connection: z1-z2
+#connection: z2-e
+# priority route is 1 turn longer -> 2 turns via a1
+#nb_drones: 1
+#start_hub: s 0 0
+#hub: a1 1 1
+#hub: p1 1 -1 [zone=priority]
+#hub: p2 2 -1 [zone=priority]
+#end_hub: e 3 0
+#connection: s-a1
+#connection: a1-e
+#connection: s-p1
+#connection: p1-p2
+#connection: p2-e
+# restricted route (2+1) ties with priority route -> 3 turns via p1, p2
+#nb_drones: 1
+#start_hub: s 0 0
+#hub: r 1 1 [zone=restricted]
+#hub: p1 1 -1 [zone=priority]
+#hub: p2 2 -1 [zone=priority]
+#end_hub: e 3 0
+#connection: s-r
+#connection: r-e
+#connection: s-p1
+#connection: p1-p2
+#connection: p2-e
+# first map, 3 drones -> 4 turns using both routes (5 = all via priority)
+#nb_drones: 3
+#start_hub: s 0 0
+#hub: a1 1 1
+#hub: a2 2 1
+#hub: p1 1 -1 [zone=priority]
+#hub: p2 2 -1 [zone=priority]
+#end_hub: e 3 0
+#connection: s-a1
+#connection: a1-a2
+#connection: a2-e
+#connection: s-p1
+#connection: p1-p2
+#connection: p2-e

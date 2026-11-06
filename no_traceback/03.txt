@@ -1,0 +1,7 @@
+# Test: not UTF-8 (byte 0xE9 in a name)
+# Expect: error message, nonzero exit, no traceback
+nb_drones: 2
+start_hub: s 0 0
+end_hub: e 1 0
+connection: s-e
+hub: café 2 0

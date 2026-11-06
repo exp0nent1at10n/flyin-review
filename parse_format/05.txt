@@ -1,0 +1,7 @@
+# nb_drones is not the first line -> error at line 2 (or 3), no traceback
+start_hub: s 0 0
+nb_drones: 2
+hub: a 1 0
+end_hub: e 2 0
+connection: s-a
+connection: a-e

@@ -1,0 +1,8 @@
+﻿# Test: UTF-8 BOM at the start
+# Expect: not in the PDF; accept or reject, but no crash. Ask why
+nb_drones: 2
+start_hub: s 0 0
+hub: a 1 0
+end_hub: e 2 0
+connection: s-a
+connection: a-e

@@ -1,0 +1,28 @@
+# One case per slot is active. To switch: comment it out with '#',
+# remove '#' from another case.
+# default link capacity is 1 (zone a holds 2) -> 3 turns (2 = ignored)
+nb_drones: 2
+start_hub: s 0 0
+hub: a 1 0 [max_drones=2]
+end_hub: e 2 0
+connection: s-a
+connection: a-e
+# default zone capacity is 1 (links carry 2) -> 3 turns (2 = ignored)
+#nb_drones: 2
+#start_hub: s 0 0
+#hub: a 1 0
+#end_hub: e 2 0
+#connection: s-a [max_link_capacity=2]
+#connection: a-e [max_link_capacity=2]
+# link capacity 2, 4 drones -> 3 turns
+#nb_drones: 4
+#start_hub: s 0 0
+#hub: a 1 0 [max_drones=4]
+#end_hub: e 2 0
+#connection: s-a [max_link_capacity=2]
+#connection: a-e [max_link_capacity=2]
+# start and end have no capacity limit -> 2 turns (5 = limit 1 on end)
+#nb_drones: 5
+#start_hub: s 0 0
+#end_hub: e 1 0
+#connection: s-e [max_link_capacity=3]

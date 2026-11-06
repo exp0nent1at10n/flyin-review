@@ -1,0 +1,15 @@
+# One case per slot is active. To switch: comment it out with '#',
+# remove '#' from another case.
+nb_drones: 2
+start_hub: s 0 0
+# superscript 2 (isdigit() True, int() raises) -> error at line 6, no traceback
+hub: a 1 0 [max_drones=²]
+# hex -> error at line 8, no traceback
+#hub: a 1 0 [max_drones=0x2]
+# empty value -> error at line 10, no traceback
+#hub: a 1 0 [max_drones=]
+# leading + -> error at line 12, no traceback
+#hub: a 1 0 [max_drones=+2]
+end_hub: e 2 0
+connection: s-a
+connection: a-e

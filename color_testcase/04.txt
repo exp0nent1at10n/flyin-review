@@ -1,0 +1,11 @@
+# One case per slot is active. To switch: comment it out with '#',
+# remove '#' from another case.
+nb_drones: 2
+start_hub: s 0 0
+hub: a 1 0
+end_hub: e 2 0
+# color on a connection -> not in the PDF; no crash, ask why
+connection: s-a [color=red]
+# color with link capacity -> not in the PDF; no crash, ask why
+#connection: s-a [max_link_capacity=2 color=red]
+connection: a-e

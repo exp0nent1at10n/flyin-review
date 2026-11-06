@@ -1,0 +1,19 @@
+# One case per slot is active. To switch: comment it out with '#',
+# remove '#' from another case.
+nb_drones: 2
+start_hub: s 0 0
+# spaces around = -> not in the PDF; no crash, ask why
+hub: a 1 0 [zone = priority]
+# # inside metadata -> not in the PDF; no crash, ask why
+#hub: a 1 0 [zone=normal # note]
+# no space before [ -> not in the PDF; no crash, ask why
+#hub: a 1 0[max_drones=2]
+# extra word after metadata -> error at line 12, no traceback
+#hub: a 1 0 [max_drones=2] extra
+# empty metadata -> not in the PDF; no crash, ask why
+#hub: a 1 0 []
+# upper case key and value -> not in the PDF; no crash, ask why
+#hub: a 1 0 [Zone=Priority]
+end_hub: e 2 0
+connection: s-a
+connection: a-e

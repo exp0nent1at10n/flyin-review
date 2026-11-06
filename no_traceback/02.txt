@@ -1,0 +1,3 @@
+# Test: comments only
+# Expect: error message, nonzero exit, no traceback
+# nothing else

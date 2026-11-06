@@ -1,0 +1,15 @@
+# One case per slot is active. To switch: comment it out with '#',
+# remove '#' from another case.
+# no space after the colon -> not in the PDF; no crash, ask why
+nb_drones:2
+# upper case keyword -> not in the PDF; no crash, ask why
+#NB_DRONES: 2
+# tab after the colon -> accept
+#nb_drones:	2
+# trailing comment -> accept
+#nb_drones: 2 # two
+start_hub: s 0 0
+hub: a 1 0
+end_hub: e 2 0
+connection: s-a
+connection: a-e

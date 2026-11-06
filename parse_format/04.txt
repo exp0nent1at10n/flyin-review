@@ -1,0 +1,10 @@
+# tabs, blank and indented comment lines, trailing comments,
+# zones and connections interleaved -> accept
+nb_drones:	2 # two
+   
+	# indented comment
+start_hub:  s	0   0 # start
+hub:	a  1  0   [max_drones=2]
+connection: s-a # link
+end_hub: e 2 0 #end
+connection:	a-e

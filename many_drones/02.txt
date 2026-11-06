@@ -1,0 +1,9 @@
+# One case per slot is active. To switch: comment it out with '#',
+# remove '#' from another case.
+# smallest input -> 1 turn (D1-e)
+nb_drones: 1
+# one billion drones -> no traceback or MemoryError; 'timeout 10 $RUN 02.txt | head'
+#nb_drones: 1000000000
+start_hub: s 0 0
+end_hub: e 1 0
+connection: s-e

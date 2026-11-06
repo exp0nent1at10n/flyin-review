@@ -1,0 +1,17 @@
+# One case per slot is active. To switch: comment it out with '#',
+# remove '#' from another case.
+nb_drones: 2
+start_hub: s 0 0
+# unknown name -> accept (used in the given maps)
+hub: a 1 0 [color=rainbow]
+# not in 8 ANSI colors -> accept (used in the given maps)
+#hub: a 1 0 [color=orange]
+# not in 8 ANSI colors -> accept (same form as the given maps)
+#hub: a 1 0 [color=gray]
+# compound name -> accept (same form as the given maps)
+#hub: a 1 0 [color=darkblue]
+# not in 8 ANSI colors -> accept (used in the given maps)
+#hub: a 1 0 [color=purple]
+end_hub: e 2 0
+connection: s-a
+connection: a-e

@@ -1,0 +1,15 @@
+# One case per slot is active. To switch: comment it out with '#',
+# remove '#' from another case.
+# zero drones -> error at line 4, no traceback
+nb_drones: 0
+# negative drones -> error at line 6, no traceback
+#nb_drones: -2
+# float notation -> error at line 8, no traceback
+#nb_drones: 2.0
+# extra token -> error at line 10, no traceback
+#nb_drones: 5 5
+start_hub: s 0 0
+hub: a 1 0
+end_hub: e 2 0
+connection: s-a
+connection: a-e

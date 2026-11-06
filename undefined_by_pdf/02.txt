@@ -1,0 +1,12 @@
+# One case per slot is active. To switch: comment it out with '#',
+# remove '#' from another case.
+nb_drones: 2
+start_hub: s 0 0
+hub: a 1 0
+end_hub: e 2 0
+connection: s-a
+connection: a-e
+# self loop -> not in the PDF; no crash, ask why
+connection: a-a
+# same link reversed with other metadata -> error at line 12 (PDF: a-b and b-a are duplicates)
+#connection: e-a [max_link_capacity=2]

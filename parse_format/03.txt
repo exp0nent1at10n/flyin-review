@@ -1,0 +1,15 @@
+# One case per slot is active. To switch: comment it out with '#',
+# remove '#' from another case.
+nb_drones: 2
+start_hub: s 0 0
+hub: a 1 0
+end_hub: e 2 0
+connection: s-a
+# spaces around the dash -> not in the PDF; no crash, ask why
+connection: a - e
+# comment right after the name -> accept
+#connection: a-e#x
+# tab after the colon -> accept
+#connection:	a-e
+# upper case keyword -> not in the PDF; no crash, ask why
+#Connection: a-e

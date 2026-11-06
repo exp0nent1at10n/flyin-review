@@ -1,0 +1,38 @@
+# One case per slot is active. To switch: comment it out with '#',
+# remove '#' from another case.
+# end is not connected -> stops; not a parse error (timeout 10: 124 = hang)
+nb_drones: 2
+start_hub: s 0 0
+hub: a 1 0
+end_hub: e 2 0
+connection: s-a
+# only path goes through a blocked zone -> stops; not a parse error (timeout 10: 124 = hang)
+#nb_drones: 2
+#start_hub: s 0 0
+#hub: x 1 0 [zone=blocked]
+#end_hub: e 2 0
+#connection: s-x
+#connection: x-e
+# cycle s-a-b-s, end isolated, 1000 drones -> stops; not a parse error (timeout 10: 124 = hang)
+#nb_drones: 1000
+#start_hub: s 0 0
+#hub: a 1 0 [max_drones=5]
+#hub: b 1 1 [max_drones=5]
+#end_hub: e 5 5
+#connection: s-a
+#connection: a-b
+#connection: b-s
+# end_hub is blocked -> not in the PDF; no crash, ask why; if accepted, reports unreachable
+#nb_drones: 2
+#start_hub: s 0 0
+#hub: a 1 0
+#end_hub: e 2 0 [zone=blocked]
+#connection: s-a
+#connection: a-e
+# start_hub is blocked -> not in the PDF; no crash, ask why; if accepted, 3 turns or unreachable
+#nb_drones: 2
+#start_hub: s 0 0 [zone=blocked]
+#hub: a 1 0
+#end_hub: e 2 0
+#connection: s-a
+#connection: a-e

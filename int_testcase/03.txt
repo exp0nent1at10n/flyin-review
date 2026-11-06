@@ -1,0 +1,17 @@
+# One case per slot is active. To switch: comment it out with '#',
+# remove '#' from another case.
+nb_drones: 2
+start_hub: s 0 0
+# Arabic-Indic digit U+0661 -> error at line 6, no traceback
+hub: a ١ 0
+# coordinate +1 -> not in the PDF; no crash, ask why
+#hub: a +1 0
+# coordinate -0 -> accept (as 0)
+#hub: a -0 0
+# exponent -> error at line 12, no traceback
+#hub: a 1e3 0
+# huge coordinate, visualizer must not crash -> accept
+#hub: a 1000000000000000000000000000000 0
+end_hub: e 2 0
+connection: s-a
+connection: a-e
