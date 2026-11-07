@@ -1,18 +1,8 @@
-# One case per slot is active. To switch: comment it out with '#',
-# remove '#' from another case.
+# two hubs at the same coordinates -> accept; visualizer must not crash
 nb_drones: 2
-# default
 start_hub: s 0 0
-# max_drones=0 on start -> accept (PDF: ignored, not an error)
-#start_hub: s 0 0 [max_drones=0]
-# start_hub is restricted -> not in the PDF; no crash, ask why; if accepted, 3 turns
-#start_hub: s 0 0 [zone=restricted]
 hub: a 1 0
-# default
+hub: b 1 0
 end_hub: e 2 0
-# max_drones=0 on end -> accept (PDF: ignored, not an error)
-#end_hub: e 2 0 [max_drones=0]
-# end_hub is restricted -> accept, 4 turns
-#end_hub: e 2 0 [zone=restricted]
 connection: s-a
 connection: a-e

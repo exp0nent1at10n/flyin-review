@@ -1,0 +1,9 @@
+# cycle s-a-b-s, end isolated, 1000 drones -> stops, not a parse error (timeout 10: 124 = hang)
+nb_drones: 1000
+start_hub: s 0 0
+hub: a 1 0 [max_drones=5]
+hub: b 1 1 [max_drones=5]
+end_hub: e 5 5
+connection: s-a
+connection: a-b
+connection: b-s

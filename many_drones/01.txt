@@ -1,11 +1,5 @@
-# One case per slot is active. To switch: comment it out with '#',
-# remove '#' from another case.
 # easy/02_simple_fork, 100 drones -> 52 turns
 nb_drones: 100
-# 1000 drones -> about 502 turns (estimated n/2 + 2), time grows linearly
-#nb_drones: 1000
-# 10000 drones -> about 5002 turns (estimated), try 'timeout 120'
-#nb_drones: 10000
 start_hub: start 0 0 [color=green]
 hub: junction 1 0 [color=yellow max_drones=2]
 hub: path_a 2 1 [color=blue]

@@ -1,0 +1,7 @@
+# default zone capacity is 1 -> 3 turns (2 = ignored)
+nb_drones: 2
+start_hub: s 0 0
+hub: a 1 0
+end_hub: e 2 0
+connection: s-a [max_link_capacity=2]
+connection: a-e [max_link_capacity=2]

@@ -1,14 +1,7 @@
-# One case per slot is active. To switch: comment it out with '#',
-# remove '#' from another case.
+# unknown key (typo), capacity 3 lost if ignored -> not in PDF; no crash, ask why
 nb_drones: 2
 start_hub: s 0 0
-# unknown key (typo); if ignored, capacity 3 is lost -> not in the PDF; no crash, ask why
 hub: a 1 0 [max_drone=3]
-# duplicate key; if accepted, which wins? -> not in the PDF; no crash, ask why
-#hub: a 1 0 [max_drones=1 max_drones=3]
-# same coordinates as a hub b at 1 0; visualizer must not crash -> accept
-#hub: a 1 0
-#hub: b 1 0
 end_hub: e 2 0
 connection: s-a
 connection: a-e

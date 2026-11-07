@@ -1,0 +1,8 @@
+# same link reversed, other metadata -> error at line 8 (PDF: duplicate)
+nb_drones: 2
+start_hub: s 0 0
+hub: a 1 0
+end_hub: e 2 0
+connection: s-a
+connection: a-e
+connection: e-a [max_link_capacity=2]

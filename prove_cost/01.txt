@@ -1,6 +1,4 @@
-# One case per slot is active. To switch: comment it out with '#',
-# remove '#' from another case.
-# fewer hops via two restricted zones, but slower -> 4 turns via a, b, c (5 = hop-count BFS)
+# fewer hops via two restricted, but slower -> 4 turns via a, b, c
 nb_drones: 1
 start_hub: s 0 0
 hub: r1 1 1 [zone=restricted]
@@ -16,29 +14,3 @@ connection: s-a
 connection: a-b
 connection: b-c
 connection: c-e
-# restricted route is faster (3 vs 4 turns) -> 3 turns via r
-#nb_drones: 1
-#start_hub: s 0 0
-#hub: r 1 1 [zone=restricted]
-#hub: a 1 -1
-#hub: b 2 -1
-#hub: c 3 -1
-#end_hub: e 4 0
-#connection: s-r
-#connection: r-e
-#connection: s-a
-#connection: a-b
-#connection: b-c
-#connection: c-e
-# blocked zone on the shortest path -> 3 turns via a, b (2 = entered x)
-#nb_drones: 1
-#start_hub: s 0 0
-#hub: x 1 0 [zone=blocked]
-#hub: a 1 1
-#hub: b 2 1
-#end_hub: e 2 0
-#connection: s-x
-#connection: x-e
-#connection: s-a
-#connection: a-b
-#connection: b-e

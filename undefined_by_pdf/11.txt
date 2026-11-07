@@ -1,0 +1,7 @@
+# non-ASCII zone names -> accept
+nb_drones: 2
+start_hub: 出発 0 0
+hub: 中継 1 0
+end_hub: 到着 2 0
+connection: 出発-中継
+connection: 中継-到着

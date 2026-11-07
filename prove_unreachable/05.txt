@@ -1,0 +1,7 @@
+# start_hub blocked -> not in PDF; no crash, ask why; if accepted, 3 turns or unreachable
+nb_drones: 2
+start_hub: s 0 0 [zone=blocked]
+hub: a 1 0
+end_hub: e 2 0
+connection: s-a
+connection: a-e

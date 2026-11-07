@@ -1,0 +1,5 @@
+# start and end have no capacity limit -> 2 turns (5 = limit 1 on end)
+nb_drones: 5
+start_hub: s 0 0
+end_hub: e 1 0
+connection: s-e [max_link_capacity=3]

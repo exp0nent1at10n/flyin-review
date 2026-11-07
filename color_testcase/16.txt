@@ -1,0 +1,7 @@
+# two-word color -> reject is natural
+nb_drones: 2
+start_hub: s 0 0
+hub: a 1 0 [color=light blue]
+end_hub: e 2 0
+connection: s-a
+connection: a-e

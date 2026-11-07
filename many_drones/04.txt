@@ -1,0 +1,5 @@
+# smallest input -> 1 turn (D1-e)
+nb_drones: 1
+start_hub: s 0 0
+end_hub: e 1 0
+connection: s-e

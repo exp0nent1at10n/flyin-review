@@ -1,0 +1,5 @@
+# 1e9 drones -> no traceback or MemoryError; 'timeout 10 $RUN 05.txt | head'
+nb_drones: 1000000000
+start_hub: s 0 0
+end_hub: e 1 0
+connection: s-e

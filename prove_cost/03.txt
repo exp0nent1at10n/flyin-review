@@ -1,0 +1,12 @@
+# blocked zone on the shortest path -> 3 turns via a, b
+nb_drones: 1
+start_hub: s 0 0
+hub: x 1 0 [zone=blocked]
+hub: a 1 1
+hub: b 2 1
+end_hub: e 2 0
+connection: s-x
+connection: x-e
+connection: s-a
+connection: a-b
+connection: b-e

@@ -1,19 +1,7 @@
-# One case per slot is active. To switch: comment it out with '#',
-# remove '#' from another case.
+# color=gray -> accept (same form as given maps)
 nb_drones: 2
 start_hub: s 0 0
-# dash in the name -> implementation-defined ('valid'); no crash, ask why
-hub: a 1 0 [color=red-ish]
-# explicit none (PDF default) -> accept
-#hub: a 1 0 [color=none]
-# no color -> accept
-#hub: a 1 0
-# hex color; # also starts a comment -> not in the PDF; no crash, ask why
-#hub: a 1 0 [color=#ff0000]
-# empty color -> not in the PDF; no crash, ask why
-#hub: a 1 0 [color=]
-# two words, not a single word -> reject is natural
-#hub: a 1 0 [color=light blue]
+hub: a 1 0 [color=gray]
 end_hub: e 2 0
 connection: s-a
 connection: a-e

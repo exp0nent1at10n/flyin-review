@@ -1,17 +1,7 @@
-# One case per slot is active. To switch: comment it out with '#',
-# remove '#' from another case.
+# color=orange -> accept (used in given maps)
 nb_drones: 2
 start_hub: s 0 0
-# upper case -> implementation-defined ('valid'); no crash, ask why
-hub: a 1 0 [color=RED]
-# mixed case -> implementation-defined ('valid'); no crash, ask why
-#hub: a 1 0 [color=Blue]
-# non-ASCII -> implementation-defined ('valid'); no crash, ask why
-#hub: a 1 0 [color=赤]
-# digits only -> implementation-defined ('valid'); no crash, ask why
-#hub: a 1 0 [color=123]
-# underscore -> implementation-defined ('valid'); no crash, ask why
-#hub: a 1 0 [color=dark_blue]
+hub: a 1 0 [color=orange]
 end_hub: e 2 0
 connection: s-a
 connection: a-e

@@ -1,0 +1,7 @@
+# upper case color -> impl-defined; no crash, ask why
+nb_drones: 2
+start_hub: s 0 0
+hub: a 1 0 [color=RED]
+end_hub: e 2 0
+connection: s-a
+connection: a-e

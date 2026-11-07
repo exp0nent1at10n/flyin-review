@@ -1,0 +1,7 @@
+# zone named D1 -> accept; output D1-D1
+nb_drones: 1
+start_hub: s 0 0
+hub: D1 1 0
+end_hub: e 2 0
+connection: s-D1
+connection: D1-e

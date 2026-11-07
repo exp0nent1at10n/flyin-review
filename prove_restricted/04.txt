@@ -1,0 +1,7 @@
+# no departure when target will be full -> 4 turns (3 = two drones in r)
+nb_drones: 2
+start_hub: s 0 0
+hub: r 1 0 [zone=restricted]
+end_hub: e 2 0
+connection: s-r [max_link_capacity=2]
+connection: r-e

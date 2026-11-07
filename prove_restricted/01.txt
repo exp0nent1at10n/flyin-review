@@ -1,35 +1,5 @@
-# One case per slot is active. To switch: comment it out with '#',
-# remove '#' from another case.
-# PDF p.13 example (restricted end, link capacity 1) -> 3 turns (4 = link counted twice)
+# PDF p.13 example -> 3 turns (4 = link counted twice)
 nb_drones: 2
 start_hub: s 0 0
 end_hub: r 1 0 [zone=restricted]
 connection: s-r
-# same, link written as r-s -> 3 turns; prints D1-r-s or D1-s-r?
-#nb_drones: 2
-#start_hub: s 0 0
-#end_hub: r 1 0 [zone=restricted]
-#connection: r-s
-# s - r - e, 3 drones -> 5 turns (7 = link counted twice)
-#nb_drones: 3
-#start_hub: s 0 0
-#hub: r 1 0 [zone=restricted]
-#end_hub: e 2 0
-#connection: s-r
-#connection: r-e
-# no departure when the target will be full -> 4 turns (3 = two drones in r, a violation)
-#nb_drones: 2
-#start_hub: s 0 0
-#hub: r 1 0 [zone=restricted]
-#end_hub: e 2 0
-#connection: s-r [max_link_capacity=2]
-#connection: r-e
-# two restricted zones in a row -> 6 turns; r1 to r2 printed as D<ID>-r1-r2
-#nb_drones: 2
-#start_hub: s 0 0
-#hub: r1 1 0 [zone=restricted]
-#hub: r2 2 0 [zone=restricted]
-#end_hub: e 3 0
-#connection: s-r1
-#connection: r1-r2
-#connection: r2-e

@@ -1,0 +1,29 @@
+# map of 02, 2 drones -> 3 turns, one via b, one via d
+nb_drones: 2
+start_hub: s 0 0
+hub: a1 1 2
+hub: a2 2 2
+hub: b1 1 1 [zone=priority]
+hub: b2 2 1 [zone=priority]
+hub: c1 1 0
+hub: c2 2 0
+hub: d1 1 -1 [zone=priority]
+hub: d2 2 -1 [zone=priority]
+hub: e1 1 -2
+hub: e2 2 -2
+end_hub: g 4 0
+connection: s-a1
+connection: a1-a2
+connection: a2-g
+connection: s-b1
+connection: b1-b2
+connection: b2-g
+connection: s-c1
+connection: c1-c2
+connection: c2-g
+connection: s-d1
+connection: d1-d2
+connection: d2-g
+connection: s-e1
+connection: e1-e2
+connection: e2-g
